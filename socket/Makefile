@@ -6,7 +6,7 @@
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/13 22:43:24 by rrhnizar          #+#    #+#              #
-#    Updated: 2023/12/13 22:56:00 by rrhnizar         ###   ########.fr        #
+#    Updated: 2023/12/16 16:55:09 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,4 +40,4 @@ clean :
 	
 fclean : clean
 
-re : fclean all
+re : fclean all 
