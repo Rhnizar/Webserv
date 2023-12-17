@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 22:03:44 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/12/16 21:51:16 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/12/16 23:41:50 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,11 +33,13 @@ int main(int argc, char **argv)
 	
 	int sockfd, newsockfd, portno, n;
 	char buffer[255];
+
+	
 	
 	struct sockaddr_in serv_add, cli_add;
 	socklen_t clilen;
 
-	sockfd = socket(AF_INET, SOCK_STREAM, 0);
+	sockfd = socket(AF_INET, SOCK_STREAM, 6);
 	if(sockfd == -1)
 		error("Error Opening Socket .\n");
 	
@@ -45,6 +47,7 @@ int main(int argc, char **argv)
 	portno = atoi(argv[1]);
 
 	serv_add.sin_family = AF_INET;
+
 	serv_add.sin_addr.s_addr = INADDR_ANY;
 	serv_add.sin_port = htons(portno);
 

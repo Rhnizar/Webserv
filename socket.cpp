@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 22:05:37 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/12/13 22:38:12 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2023/12/16 23:46:33 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@
 
 int main()
 {
+	sockaddr;
+	
 	int fd = socket(AF_INET, SOCK_STREAM, 0);
-	sockaddr_in server_add;
-
+	struct sockaddr_in server_add;
+	
 	server_add.sin_family = AF_INET;
 	server_add.sin_port = htons(999);
 	server_add.sin_addr.s_addr = htonl(INADDR_ANY);
