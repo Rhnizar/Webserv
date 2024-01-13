@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 14:44:12 by rrhnizar          #+#    #+#             */
-/*   Updated: 2023/12/17 18:19:14 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/12 19:15:00 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,11 @@ int main(int argc, char **argv)
 	std::cout  << recievMsg << std::endl;
 	// 6. close the socket
 
+	// std::string request = "";
+	
 	while (1)
 	{
+		
 		/* code */
 	}
 	
