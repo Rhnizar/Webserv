@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:48:53 by hdagdagu          #+#    #+#             */
-/*   Updated: 2024/01/13 18:20:44 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/15 11:47:11 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -218,7 +218,7 @@ std::string Server::read_full_request(int socket_fd, fd_set &fd_set_Read, fd_set
 	if (valread > 0)
 	{
 		buffer[valread] = '\0';
-		std::string body(buffer, valread); // ???
+		std::string body(buffer, valread);
 		if (client_index == -1)
 		{
 			Client newClient;
