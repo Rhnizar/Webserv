@@ -1,16 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Request.cpp                                        :+:      :+:    :+:   */
+/*   Response.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/13 19:51:23 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/16 10:23:16 by rrhnizar         ###   ########.fr       */
+/*   Created: 2024/01/16 10:32:29 by rrhnizar          #+#    #+#             */
+/*   Updated: 2024/01/16 11:27:34 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <unistd.h> // For close function
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 #include "Request.hpp"
+
+const int PORT = 808;
+const std::string HTML_FILE_PATH = "./Resources/app1/index.html";
+
 
 void error(std::string msg)
 {
@@ -70,6 +84,34 @@ void Request::Parse_Request(std::string httpRequest)
 	std::cout << "\n---------------------------------------------------------------------------------\n";
 }
 
+
+std::string readHtmlFile(const std::string& filePath)
+{
+    std::ifstream file(filePath);
+    if (file.is_open())
+	{
+        std::ostringstream buffer;
+        buffer << file.rdbuf();
+        return buffer.str();
+    }
+    return "";
+}
+
+void handleClient(int clientSocket)
+{
+    const std::string htmlContent = readHtmlFile(HTML_FILE_PATH);
+
+    std::string response = "HTTP/1.1 200 OK\r\n"
+                           "Content-Type: text/html\r\n"
+                           "Content-Length: " + std::to_string(htmlContent.size()) + "\r\n"
+                           "\r\n" + htmlContent;
+
+    send(clientSocket, response.c_str(), response.size(), 0);
+
+    // Close the client socket
+    close(clientSocket);
+}
+
 int main(int argc, char **argv)
 {
 	Request ReqClass;
@@ -78,49 +120,70 @@ int main(int argc, char **argv)
 		std::cerr << "Port number Not provided. Program terminated " << std::endl;
 		exit(1);
 	}
-	
-	int sockfd, newsockfd, portno, n;
-	struct sockaddr_in serv_add, cli_add;
-	socklen_t clilen;
+    // Create a socket
+    int serverSocket = socket(AF_INET, SOCK_STREAM, 0);
+    if (serverSocket == -1)
+	{
+        std::cerr << "Error creating socket" << std::endl;
+        return EXIT_FAILURE;
+    }
+	int PORT = atoi(argv[1]);
+    // Bind the socket to an address and port
+    sockaddr_in serverAddress;
+    serverAddress.sin_family = AF_INET;
+    serverAddress.sin_addr.s_addr = INADDR_ANY;
+    serverAddress.sin_port = htons(PORT);
+
+    if (bind(serverSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1)
+	{
+        std::cerr << "Error binding socket" << std::endl;
+        close(serverSocket);
+        return EXIT_FAILURE;
+    }
+
+    // Listen for incoming connections
+    if (listen(serverSocket, 10) == -1)
+	{
+        std::cerr << "Error listening on socket" << std::endl;
+        close(serverSocket);
+        return EXIT_FAILURE;
+    }
+
+    std::cout << "Server is listening on port " << PORT << std::endl;
+
 	char buffer[1024];
-	sockfd = socket(AF_INET, SOCK_STREAM, 6);
-	if(sockfd == -1)
-		error("Error Opening Socket .\n");
-	bzero((char *) &serv_add, sizeof(serv_add));
-	portno = atoi(argv[1]);
-
-	serv_add.sin_family = AF_INET;
-
-	serv_add.sin_addr.s_addr = INADDR_ANY;
-	serv_add.sin_port = htons(portno);
-	
-	if(bind(sockfd, (struct sockaddr *) &serv_add, sizeof(serv_add)) < 0)
-		error("Binding Failed .\n");
-
-	listen(sockfd, 5);
-	
-	while(1)
+    while (true)
 	{
 		std::string httpRequest;
-		newsockfd = accept(sockfd, (struct sockaddr *) &cli_add, &clilen);
-		if(newsockfd < 0)
-			error("Error On Accept.\n");
+        // Accept incoming connections
+        sockaddr_in clientAddress;
+        socklen_t clientAddressLength = sizeof(clientAddress);
+        int clientSocket = accept(serverSocket, (struct sockaddr*)&clientAddress, &clientAddressLength);
+
+        if (clientSocket == -1)
+		{
+            std::cerr << "Error accepting connection" << std::endl;
+            continue;
+        }
+
 		bzero(buffer, 1024);
-		n = recv(newsockfd, buffer, 1024, 0);
+        std::cout << "Accepted connection from " << inet_ntoa(clientAddress.sin_addr) << std::endl;
+		
+		// Hndle Request 
+
+		int n = recv(clientSocket, buffer, 1024, 0);
 		if (n < 0)
 			error("Error on reading.\n");
 		std::string buf(buffer, n);
 		httpRequest += buf;
 		ReqClass.Parse_Request(httpRequest);
 
-		//response
-		send(newsockfd, "/app1/index.html", 16, 0);
-	}
-	close(newsockfd);
-	close(sockfd);
-	return 0;
+        // Handle the client request ===> response 
+        handleClient(clientSocket);
+    }
+
+    // Close the server socket
+    close(serverSocket);
+
+    return EXIT_SUCCESS;
 }
-
-
-
-// https://events.teams.microsoft.com/event/afc3f64d-8cb7-4628-985e-e97dce4fc2ca@8301b3bc-3365-44a8-b592-fc43d1c24632
