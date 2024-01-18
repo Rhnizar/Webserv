@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 19:53:17 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/15 12:50:46 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/18 19:16:05 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
+#include <sys/stat.h>
 
 struct RequestLine
 {
@@ -39,6 +40,7 @@ class Request
 		RequestLine ReqLine;
 		void	Parse_Request(std::string request);
 		void	Parse_ReqLine(std::string line);
+		void	Response(int clientSocket);
 		
 };
 #endif
