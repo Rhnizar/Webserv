@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:02:47 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 19:05:33 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/18 20:48:04 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void Request::Parse_Request(std::string httpRequest)
 {
 	std::istringstream ss(httpRequest);
     std::string line;
+    std::vector<std::pair<std::string, std::string> > Header;
 	
 	std::getline(ss, line);
 	Parse_ReqLine(line);
@@ -59,6 +60,8 @@ void Request::Parse_Request(std::string httpRequest)
 	std::cout << "\n---------------------------------- Header ---------------------------------------\n";
     for (; it != Header.end(); it++)
         std::cout << "Key: " << it->first << "   |   Value: " << it->second << std::endl;
+    // std::cout << httpRequest << std::endl;
 	std::cout << "\n---------------------------------------------------------------------------------\n";
+    
 }
 

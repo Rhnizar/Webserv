@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 19:53:17 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 19:16:05 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/18 20:46:46 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ class Request
 {
 	public:
 		Request();
-		std::vector<std::pair<std::string, std::string> > Header;
 		RequestLine ReqLine;
 		void	Parse_Request(std::string request);
 		void	Parse_ReqLine(std::string line);

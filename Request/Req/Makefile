@@ -5,39 +5,32 @@
 #                                                     +:+ +:+         +:+      #
 #    By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/12/13 22:43:24 by rrhnizar          #+#    #+#              #
-#    Updated: 2024/01/18 19:43:36 by rrhnizar         ###   ########.fr        #
+#    Created: 2024/01/18 19:42:29 by rrhnizar          #+#    #+#              #
+#    Updated: 2024/01/18 19:50:42 by rrhnizar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Webserv
+NAME = Web_serv
 
-NAME_SERVER = Server
+RFLAG = c++ -Wall -Werror -Wextra -std=c++98
 
-NAME_CLIENT = Client
+SRCS = Request.cpp Response.cpp Parse_Request.cpp
 
-# SRCS = Client.cpp Server.cpp
+OBJS = ${SRCS:.cpp=.o}
 
-# OBJS = ${SRCS:.cpp=.o}
-
-CXX = c++ 
-
-RFLAG = ${CXX} -Wall -Werror -Wextra -std=c++98
-
-# %.o : %.cpp
-# 	${RFLAG} -c $< -o $@
+%.o : %.cpp
+	${RFLAG} -c $< -o $@
 
 all: ${NAME}
 
-${NAME} : ${OBJ} ${NAME_SERVER}
-	${RFLAG} Client.cpp -o ${NAME_CLIENT}
+${NAME} : ${OBJS}
+	${RFLAG} ${OBJS} -o ${NAME}
 
-${NAME_SERVER} :
-	${RFLAG} Server.cpp -o ${NAME_SERVER}
 
 clean :
-	@rm -rf Client Server
+	@rm -rf ${OBJS}
 	
 fclean : clean
+	@rm -rf ${NAME}
 
-re : fclean all 
+re : fclean all

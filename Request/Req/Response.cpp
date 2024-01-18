@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 10:32:29 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 19:15:44 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/18 20:37:48 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,8 @@ std::string readHtmlFile(const std::string& filePath)
 void Request::Response(int clientSocket)
 {
     // here check file if exist or no
-    std::string HTML_FILE_PATH = root + ReqLine.Path + "/index.html";
+    // std::string HTML_FILE_PATH = root + ReqLine.Path + "/index.html";
+    std::string HTML_FILE_PATH = root + ReqLine.Path;
     const std::string htmlContent = readHtmlFile(HTML_FILE_PATH);
 
     std::string response = "HTTP/1.1 200 OK\r\n"
