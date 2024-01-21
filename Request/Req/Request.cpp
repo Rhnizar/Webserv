@@ -6,11 +6,12 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 19:51:23 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 19:15:50 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/21 17:36:37 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Request.hpp"
+#include <arpa/inet.h>
 
 void error(std::string msg)
 {
@@ -43,6 +44,7 @@ int main(int argc, char **argv)
 	serv_add.sin_family = AF_INET;
 
 	serv_add.sin_addr.s_addr = INADDR_ANY;
+	// serv_add.sin_addr.s_addr = inet_addr("127.0.0.1");
 	serv_add.sin_port = htons(portno);
 	
 	if(bind(sockfd, (struct sockaddr *) &serv_add, sizeof(serv_add)) < 0)
@@ -52,6 +54,7 @@ int main(int argc, char **argv)
 	
 	while(1)
 	{
+		ReqClass.checkRef = 0;
 		std::string httpRequest;
 		newsockfd = accept(sockfd, (struct sockaddr *) &cli_add, &clilen);
 		if(newsockfd < 0)

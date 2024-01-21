@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 19:53:17 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 20:46:46 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/19 18:13:43 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 #include <iostream>
 #include <sstream>
 #include <sys/stat.h>
+#include <cstring>
 
 struct RequestLine
 {
@@ -35,6 +36,7 @@ struct RequestLine
 class Request
 {
 	public:
+		int checkRef;
 		Request();
 		RequestLine ReqLine;
 		void	Parse_Request(std::string request);

@@ -1,0 +1,678 @@
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/index.html
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Upgrade-Insecure-Requests   |   Value: 1
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: Purpose   |   Value: prefetch
+Key: Accept   |   Value: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Key: Sec-Fetch-Site   |   Value: none
+Key: Sec-Fetch-Mode   |   Value: navigate
+Key: Sec-Fetch-User   |   Value: ?1
+Key: Sec-Fetch-Dest   |   Value: document
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/css/bootstrap.css
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: text/css,*/*;q=0.1
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: style
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/css/style.css
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: text/css,*/*;q=0.1
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: style
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/css/responsive.css
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: text/css,*/*;q=0.1
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: style
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/js/jquery-3.4.1.min.js
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: */*
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: script
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/logo.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/telephone.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/mail.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/location.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/js/bootstrap.js
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: */*
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: script
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/c1.jpg
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/play-icon.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/index.html
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Accept   |   Value: */*
+Key: X-Requested-With   |   Value: XMLHttpRequest
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: cors
+Key: Sec-Fetch-Dest   |   Value: empty
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/c2.jpg
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/b1.jpg
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/b2.jpg
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/client1.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/quote.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/client2.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/facebook.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/twitter.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/linkedin.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/instagram.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/youtube.png
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/oxer-html/images/footer-img.jpg
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: Sec-Purpose   |   Value: prefetch;prerender
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Purpose   |   Value: prefetch
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetch-Mode   |   Value: no-cors
+Key: Sec-Fetch-Dest   |   Value: image
+Key: Referer   |   Value: http://localhost:99/oxer-html/index.html
+Key: Accept-Encoding   |   Value: gzip, deflate, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7
+
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/favicon.ico
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+Key: Host   |   Value: localhost:99
+Key: Connection   |   Value: keep-alive
+Key: sec-ch-ua   |   Value: "Not/A)Brand";v="99", "Google Chrome";v="115", "Chromium";v="115"
+Key: sec-ch-ua-mobile   |   Value: ?0
+Key: User-Agent   |   Value: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+Key: sec-ch-ua-platform   |   Value: "macOS"
+Key: Accept   |   Value: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Key: Sec-Fetch-Site   |   Value: same-origin
+Key: Sec-Fetc
+---------------------------------------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	
+Path: 	
+HTTP Version: 	
+e, br
+Key: Accept-Language   |   Value: en-US,en;q=0.9,fr;q=0.8,ar;q=0.7

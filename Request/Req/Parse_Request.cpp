@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:02:47 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 20:48:04 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/19 19:03:06 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,17 @@ void Request::Parse_Request(std::string httpRequest)
     }
 	std::vector<std::pair<std::string, std::string> >::iterator it = Header.begin();
 	std::cout << "\n---------------------------------- Header ---------------------------------------\n";
+
     for (; it != Header.end(); it++)
-        std::cout << "Key: " << it->first << "   |   Value: " << it->second << std::endl;
-    // std::cout << httpRequest << std::endl;
+    {
+        if(strncmp(it->first.c_str(), "Referer", 7) == 0)
+        {
+            std::cout << "\n\n\n Reference  is here \n\n\n";
+            checkRef = 1;
+        }
+    //     std::cout << "Key: " << it->first << "   |   Value: " << it->second << std::endl;
+    }
+    // // std::cout << httpRequest << std::endl;
 	std::cout << "\n---------------------------------------------------------------------------------\n";
-    
 }
 

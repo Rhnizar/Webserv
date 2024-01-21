@@ -1,0 +1,134 @@
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/rrr/jeux.html
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+
+---------------------------------------------------------------------------------
+
+--------------------- response : ---------------------------
+<doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Jeux</title>
+    </head>
+    <style>
+        h1
+        {
+            text-align: center;
+            border: 2px solid black;
+            background-color: darkorchid;
+        }
+        hr
+        {
+            border:2px solid red;
+        }
+        p
+        {
+            font-size: 40px;
+            padding: 30px;
+        }
+        #resultat
+        {
+            background-color: red;
+        }
+    </style>
+    <body onload="des()">
+        <h1>Mon Petit Jeux</h1>
+        <h2>Nous avons chosit un nomber aléatoire entre 1 et 100.<br>Essayer de le découvrir.Nous affichons si vou avez la bonne ou la mauvise réponse</h2>
+        <label>Essayer:</label><input type="number" id="num"><input type="button"value="Tester" id="b" onclick="tester()"><br>
+        <p id="t"></p>    <p id="resultat"></p>
+        <hr>
+    </body>
+</html>
+<script src="jeux.js"></script>
+
+
+------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/rrr/jeux.js
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+
+
+
+ Reference  is here 
+
+
+
+---------------------------------------------------------------------------------
+
+--------------------- response : ---------------------------
+
+    var randomnumber = Math.floor(Math.random() * 100) + 1;
+    const msg = document.getElementById("resultat");
+    const number = document.getElementById("num");
+    const b = document.getElementById("b");
+    const p = document.getElementById("t");
+    var conteur = 1;
+    function tester()
+    {
+        var numberuser = Number(number.value);
+        if(conteur === 1)
+        {
+            p.textContent = "Vos Test :"; 
+        }
+        p.textContent += numberuser + ' ';
+        if(numberuser === randomnumber)
+        {
+           msg.style.display = "block";
+           msg.textContent = "Bravo";
+        }
+        
+        else if(conteur === 3)
+        {
+            msg.style.display = "block";
+            msg.textContent = "!!! GAME OVER !!! . le bon nomber est :"+randomnumber ;
+            b.disabled=true;
+        }
+        else
+        {
+            msg.style.display = "block";
+            msg.textContent = "Faux";
+        }
+        conteur ++;
+        number.value="";
+        number.focus();
+    }
+    function des()
+    {
+        msg.style.display = "none";
+    }
+
+
+------------------------------------------------
+
+---------------  HttpRequestLine --------------------------------
+Method:	GET
+Path: 	/favicon.ico
+HTTP Version: 	HTTP/1.1
+
+----------------------------------------------------------------
+
+---------------------------------- Header ---------------------------------------
+
+
+
+ Reference  is here 
+
+
+
+---------------------------------------------------------------------------------
+
+--------------------- response : ---------------------------
+

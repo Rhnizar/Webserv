@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 10:32:29 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/01/18 20:37:48 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/01/21 18:31:53 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,11 @@ void Request::Response(int clientSocket)
 {
     // here check file if exist or no
     // std::string HTML_FILE_PATH = root + ReqLine.Path + "/index.html";
-    std::string HTML_FILE_PATH = root + ReqLine.Path;
+    std::string HTML_FILE_PATH;
+    // if(checkRef == 1)
+    //     HTML_FILE_PATH = root  + ReqLine.Path;
+    // else
+        HTML_FILE_PATH = root + ReqLine.Path + "/index.html";
     const std::string htmlContent = readHtmlFile(HTML_FILE_PATH);
 
     std::string response = "HTTP/1.1 200 OK\r\n"
@@ -56,9 +60,9 @@ void Request::Response(int clientSocket)
 
     send(clientSocket, response.c_str(), response.size(), 0);
 
-    // std::cout << "\n------------------------------------------------\n";
-    // std::cout << htmlContent << std::endl;
-    // std::cout << "\n------------------------------------------------\n";
+    std::cout << "\n--------------------- response : ---------------------------\n";
+    std::cout << htmlContent << std::endl;
+    std::cout << "\n------------------------------------------------\n";
     
     // Close the client socket
     close(clientSocket);
