@@ -3,26 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hdagdagu <hdagdagu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/01 15:36:49 by hdagdagu          #+#    #+#             */
-/*   Updated: 2024/03/11 17:45:55 by hdagdagu         ###   ########.fr       */
+/*   Created: 2023/12/05 11:19:31 by kchaouki          #+#    #+#             */
+/*   Updated: 2024/02/11 17:08:45 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "include/header.hpp"
+#include "./ConfigParsing/Parser.hpp"
+#include "./ConfigParsing/StringExtensions.hpp"
+#include "./Request_Response/TmpServer.hpp"
+#include <stdlib.h> // for atoi
 
 int main(int ac, char **av)
 {
+	if (ac != 3)
+		return (std::cout << "Usage: \n\t./webserv [configuration file]" << std::endl, 1);
 	try
 	{
-		Parser parsedData(ac, av);
-        Wb_Server _Wb_Server(parsedData);
+		server(av[1], atoi(av[2]));
 	}
 	catch (CustomException ce)
 	{
-		std::cerr << ce.what() << std::endl;
-	    return (1);
+		std::cout << ce.what() << std::endl; 
 	}
 	return (0);
 }
