@@ -6,7 +6,7 @@
 /*   By: rrhnizar <rrhnizar@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 11:20:14 by rrhnizar          #+#    #+#             */
-/*   Updated: 2024/03/09 19:59:53 by rrhnizar         ###   ########.fr       */
+/*   Updated: 2024/03/15 22:41:08 by rrhnizar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ Response::Response(VecStringString& track_cookie) : ResLine(ResponseLine()), Res
 	httpVersions.push_back("HTTP/0.9");
 	httpVersions.push_back("HTTP/1.0");
 	httpVersions.push_back("HTTP/2");
-	httpVersions.push_back("HTTP/3:");
+	httpVersions.push_back("HTTP/3");
 	
 	ReqErr = 0;
 }
